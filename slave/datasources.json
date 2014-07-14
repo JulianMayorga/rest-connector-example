@@ -1,0 +1,22 @@
+{
+  "db": {
+    "defaultForType": "db",
+    "connector": "memory"
+  },
+  "push": {
+    "defaultForType": "push",
+    "connector": "loopback-push-notification",
+    "installation": "installation",
+    "notification": "notification",
+    "application": "application"
+  },
+  "mail": {
+    "defaultForType": "mail",
+    "connector": "mail"
+  },
+  "remote": {
+    "defaultForType": "remote",
+    "connector": "loopback-connector-rest",
+    "baseURL": "http://localhost:3000/api"
+  }
+}
