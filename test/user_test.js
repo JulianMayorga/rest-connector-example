@@ -3,8 +3,8 @@
 var request = require('supertest');
 var should = require('should');
 
-var master = require('../master/app.js');
-var slave = require('../slave/app.js');
+var master = 'http://localhost:3000';
+var slave = 'http://localhost:3001';
 
 describe('Master server', function () {
   var email = 'email@example.com';

@@ -1,0 +1,27 @@
+{
+  "name": "soa",
+  "version": "0.0.0",
+  "description": "Service oriented architecture API",
+  "main": "slave/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "./node_modules/.bin/forever start master/app.js && ./node_modules/.bin/forever start slave/app.js",
+    "test": "sleep 1 && mocha",
+    "posttest": "./node_modules/.bin/forever stop master/app.js && ./node_modules/.bin/forever stop slave/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JulianMayorga/rest-connector-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianMayorga/rest-connector-example/issues"
+  },
+  "homepage": "https://github.com/JulianMayorga/rest-connector-example",
+  "devDependencies": {
+    "forever": "^0.11.1"
+  }
+}
