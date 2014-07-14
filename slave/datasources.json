@@ -16,7 +16,8 @@
   },
   "remote": {
     "defaultForType": "remote",
-    "connector": "loopback-connector-rest",
-    "baseURL": "http://localhost:3000/api"
+    "connector": "remote",
+    "host": "localhost",
+    "port": 3000
   }
 }

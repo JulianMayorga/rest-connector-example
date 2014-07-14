@@ -12,7 +12,7 @@ describe('Master server', function () {
 
   it('should return new user email and id', function (done) {
     request(master)
-    .post('/api/users')
+    .post('/users')
     .send({
       email: email,
       password: password

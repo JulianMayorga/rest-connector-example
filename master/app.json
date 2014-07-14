@@ -1,5 +1,6 @@
 {
   "port": 3000,
   "host": "0.0.0.0",
-  "cookieSecret": "710dacf8-b1af-4baf-91e8-dc7bbcd0c956"
+  "cookieSecret": "710dacf8-b1af-4baf-91e8-dc7bbcd0c956",
+  "restApiRoot": "/"
 }
